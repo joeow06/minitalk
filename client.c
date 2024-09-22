@@ -6,7 +6,7 @@
 /*   By: jow <jow@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 18:20:13 by jow               #+#    #+#             */
-/*   Updated: 2024/09/22 22:38:49 by jow              ###   ########.fr       */
+/*   Updated: 2024/09/22 23:45:59 by jow              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	ft_send_signals(int server_pid, char *message)
 			while (!g_confirm_flag)
 				;
 			g_confirm_flag = 0;
-			usleep(100);
+			usleep(10);
 		}
 		letter++;
 	} 
