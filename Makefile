@@ -27,11 +27,9 @@ $(LIBFT):
 clean:
 	$(MAKE) clean -C libft
 	$(RM) $(OBJ_SERVER) $(OBJ_CLIENT)
-	$(CLEANED)
 
 fclean: clean
 		$(RM) server client
-		$(FCLEANED)
 
 re: fclean all
 
