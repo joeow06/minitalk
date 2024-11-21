@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   client.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jow <jow@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: joeow <joeow@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 18:20:13 by jow               #+#    #+#             */
-/*   Updated: 2024/09/22 23:45:59 by jow              ###   ########.fr       */
+/*   Updated: 2024/11/21 13:53:33 by joeow            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	g_confirm_flag = 0;
 
-void ft_resp_handler(int signum)
+void	ft_resp_handler(int signum)
 {
 	g_confirm_flag = 1;
 	(void)signum;
@@ -41,7 +41,7 @@ void	ft_send_signals(int server_pid, char *message)
 			usleep(10);
 		}
 		letter++;
-	} 
+	}
 }
 
 int	main(int argc, char **argv)
